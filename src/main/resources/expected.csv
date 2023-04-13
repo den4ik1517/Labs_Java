@@ -1,0 +1,8 @@
+Mosquito, 6, true, true, true, true
+Mosquito
+Hornet, 6, true, true, 5
+Hornet
+Bee, 6, true, false, true, false
+Bee
+Butterfly, 6, true, false, true, false, 10
+Buterfly
