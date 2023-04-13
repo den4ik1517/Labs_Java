@@ -14,6 +14,12 @@ public class InsectManager {
     }
 
     public void addInsect(Insect insect) {
+
+        this.insects = new ArrayList<>();
+    }
+
+    public void addInsect(Insect insect) {
+
         insects.add(insect);
     }
 
@@ -52,11 +58,13 @@ public class InsectManager {
     }
 
     public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         List<Insect> insects = new ArrayList<>();
         insects.add(new Mosquito("Mosquito", 6, true, true, true, true));
         insects.add(new Hornet("Hornet", 6, true, true, 5));
         insects.add(new Bee("Bee", 6, true, false, true, false));
         insects.add(new Buterfly("Buterfly", 6, true, false, true, false, 10));
+        insects.add(new Buterfly("Butterfly", 6, true, false, true, false, 10));
 
         InsectManager insectManager = new InsectManager();
         insects.forEach(insectManager::addInsect);
@@ -74,5 +82,8 @@ public class InsectManager {
 
         System.out.println("\nCSV:");
         System.out.println(insectManager.toCSV());
+    }
+}
+
     }
 }
