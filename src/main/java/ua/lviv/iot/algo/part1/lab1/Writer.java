@@ -2,9 +2,6 @@ package ua.lviv.iot.algo.part1.lab1;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.List;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class Writer {
