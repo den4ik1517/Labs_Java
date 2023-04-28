@@ -20,6 +20,17 @@ public class Mosquito extends Insect {
     }
 
     @Override
+    public String toCSV() {
+        return String.format(name, numberOfLegs, hasWings, isDangerous, isFemale, isBloodSucker);
+    }
+
+    @Override
+    public String getHeaders() {
+
+        return "Mosquito, 6, true, true, true, true";
+    }
+
+    @Override
     public boolean canInjectPoison() {
 
         return true;

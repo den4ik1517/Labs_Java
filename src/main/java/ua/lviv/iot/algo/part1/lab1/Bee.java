@@ -20,6 +20,17 @@ public class Bee extends Insect {
     }
 
     @Override
+    public String toCSV() {
+        return String.format(name, numberOfLegs, hasWings, isDangerous, isFemale, isBloodSucker);
+    }
+
+    @Override
+    public String getHeaders() {
+
+        return "Bee, 6, true, false, true, false";
+    }
+
+    @Override
     public boolean canInjectPoison() {
 
         return false;

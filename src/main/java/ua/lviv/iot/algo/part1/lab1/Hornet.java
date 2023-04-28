@@ -18,6 +18,17 @@ public class Hornet extends Insect {
     }
 
     @Override
+    public String toCSV() {
+        return String.format(name, numberOfLegs, hasWings, isDangerous, lengthOfStingInMillimeters);
+    }
+
+    @Override
+    public String getHeaders() {
+
+        return "Hornet, 6, true, true, 5";
+    }
+
+    @Override
     public boolean canInjectPoison() {
 
         return true;

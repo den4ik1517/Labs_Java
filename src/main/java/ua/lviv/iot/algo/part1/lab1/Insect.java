@@ -16,6 +16,10 @@ public abstract class Insect {
     protected abstract boolean canInjectPoison();
 
     public abstract boolean surviveOverWinter();
+
+    public abstract String toCSV();
+
+    public abstract String getHeaders();
 }
 
 

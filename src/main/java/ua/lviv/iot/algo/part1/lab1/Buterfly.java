@@ -22,6 +22,17 @@ public class Buterfly extends Insect {
     }
 
     @Override
+    public String toCSV() {
+        return String.format(name, numberOfLegs, hasWings, isDangerous, isFemale, isBloodSucker, lengthOfStingInMillimeters);
+    }
+
+    @Override
+    public String getHeaders() {
+
+        return "Butterfly, 6, true, false, true, false, 10";
+    }
+
+    @Override
     public boolean canInjectPoison() {
 
         return false;
